@@ -74,8 +74,25 @@ if type(10) is int:
     pass
 
 
-while True:
-    n1 = int(input("Ingresar primer numero: "))
-    n2 = int(input("Ingresar segundo numero: "))
+# while True:
+#     n1 = int(input("Ingresar primer numero: "))
+#     n2 = int(input("Ingresar segundo numero: "))
 
-    print(suma(n1, n2))
+#     print(suma(n1, n2))
+
+def acumulador(desde, hasta):
+    resultado = 0
+    for valor in range(desde, hasta):
+        resultado += valor # resultado = resultado + valor
+    return resultado
+
+print(acumulador(2, 10))
+print(acumulador(55, 200))
+print(acumulador(500, 900))
+print(acumulador(123, 2322))
+print(acumulador(2343, 2342333))
+print(acumulador(23423, 23423433))
+
+resultado /= 10 # resultado = resultado / 10
+resultado *= 10 # resultado = resultado * 10
+resultado -= 10 # resultado = resultado - 10
