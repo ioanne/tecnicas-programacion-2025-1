@@ -96,3 +96,18 @@ print(acumulador(23423, 23423433))
 resultado /= 10 # resultado = resultado / 10
 resultado *= 10 # resultado = resultado * 10
 resultado -= 10 # resultado = resultado - 10
+
+
+# Generador de valores range
+range(0, 10) # Devuelve valores entre 0 y 9
+# Ej 0, 1, 3, 4, 5, 6, 7, 8, 9
+
+# Devuelve valores entre 0 y 9 con salto de a 2
+range(0, 10, 2)
+# Ej, 0, 2, 4, 6, 8
+
+
+for i in range(0, 10):
+    print(i)
+
+    
