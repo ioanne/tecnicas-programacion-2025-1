@@ -53,3 +53,22 @@ for resultado in resultados:
     kilos_reciclados = resultado['kilos_reciclados'] # Obtenemos los kilos reciclados
     print(f"Barrio: {barrio}")
     print(f"Kilos reciclados: {kilos_reciclados}")
+
+
+# Manera con un solo for
+
+barrio_ganador = ''
+cantidad_kilos_ganador = 0
+
+for resultado in resultados:
+    barrio = resultado['barrio'] # Obtenemos el barrio
+    kilos_reciclados = resultado['kilos_reciclados'] # Obtenemos los kilos reciclados
+
+    print(f"Barrio: {barrio} reciclo {kilos_reciclados}")
+    if kilos_reciclados > cantidad_kilos_ganador:
+        cantidad_kilos_ganador = kilos_reciclados
+        barrio_ganador = barrio
+
+
+print("=" * 120)
+print(f"El barrio ganador es: {barrio_ganador} con {cantidad_kilos_ganador}")
